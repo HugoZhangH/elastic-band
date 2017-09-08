@@ -1,0 +1,63 @@
+.elastic-band-scroll {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+}
+
+.elastic-band-draw {
+    background: rgba(235, 235, 235, 0.9);
+    background-size: 100% 100%;
+    cursor: default;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.elastic-band-draw,
+.elastic-band-draw .elastic-band-tmp,
+.elastic-band-draw .elastic-band,
+.elastic-band-draw .elastic-band .elastic-band-delete,
+.elastic-band-draw .elastic-band .elastic-band-zoom {
+    position: absolute;
+}
+
+.elastic-band-draw .elastic-band-tmp {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px dashed rgba(255, 0, 0, 0.5);
+}
+
+.elastic-band-draw .elastic-band {
+    background: rgba(178, 209, 178, .6);
+    border: 1px solid rgba(154, 179, 154, 1);
+}
+
+.elastic-band-draw .elastic-band-selected {
+    background: rgba(255, 168, 0, .4);
+    border: 1px solid rgba(200, 135, 10, .6);
+}
+
+.elastic-band-draw .elastic-band-tmp,
+.elastic-band-draw .elastic-band {
+    border-radius: 3px;
+}
+
+.elastic-band-draw .elastic-band .elastic-band-delete {
+    background: url(elastic-band-close.png) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 14px;
+    right: 1px;
+    top: 1px;
+    width: 14px;
+}
+
+.elastic-band-draw .elastic-band .elastic-band-zoom {
+    background: rgba(200, 135, 10, 0.6);
+    bottom: 0px;
+    cursor: nw-resize;
+    display: none;
+    height: 9px;
+    right: 0px;
+    width: 9px;
+}
