@@ -1,0 +1,151 @@
+.dialog {
+    display: none;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.dialog *:only-child {
+    line-height: 9px;
+}
+
+.dialog-mask {
+    background: rgba(71, 125, 155, 0.7);
+    height: 0%;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    width: 0%;
+    z-index: 1;
+}
+
+.dialog-wrap {
+    -webkit-box-shadow: 0 0 5px rgba(22, 118, 163, 0.9);
+    -moz-box-shadow: 0 0 5px rgba(22, 118, 163, 0.9);
+    background: rgba(36, 140, 188, 1);
+    border: 1px solid rgba(14, 102, 143, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(22, 118, 163, 0.9);
+    font-size: 14px;
+    height: auto;
+    left: 50%;
+    min-width: 282px;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    width: auto;
+}
+
+.dialog-wrap span.dialog-title,
+.dialog-wrap div.dialog-content div {
+    display: block;
+}
+
+.dialog-wrap span.dialog-title {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 6px;
+}
+
+.dialog-wrap span.dialog-title span.dialog-close {
+    background: url(dialog-close.png) no-repeat center;
+    background-size: 100%;
+    cursor: pointer;
+    height: 12px;
+    position: absolute;
+    right: 8px;
+    text-align: center;
+    top: 10px;
+    width: 12px;
+}
+
+.dialog-wrap span.dialog-title span.dialog-close::after {
+    content: '';
+}
+
+.dialog-wrap div.dialog-content {
+    background: rgba(255, 255, 255, 1);
+    overflow: auto;
+}
+
+.dialog-wrap div.dialog-content .dialog-icon {
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    width: 40px;
+}
+
+.dialog-wrap div.dialog-content .icon-error {
+    background: url(dialog-icon.png) no-repeat left;
+    background-size: cover;
+}
+
+.dialog-wrap div.dialog-content .icon-question {
+    background: url(dialog-icon.png) no-repeat center;
+    background-size: cover;
+}
+
+.dialog-wrap div.dialog-content .icon-warning {
+    background: url(dialog-icon.png) no-repeat right;
+    background-size: cover;
+}
+
+
+/* .dialog-wrap div.dialog-content input {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dialog-wrap div.dialog-content input:focus {
+    background: rgba(244, 250, 255, 0.9);
+    border: 1px solid rgba(116, 185, 239, 0.9);
+    box-shadow: 0 0 5px rgba(197, 220, 238, 0.9);
+    font-weight: bold;
+    transition: border linear .2s, box-shadow linear .2s;
+} */
+
+.dialog-wrap div.dialog-footer {
+    background: rgba(225, 225, 225, 1);
+    border-top: 1px solid rgba(198, 198, 198, 1);
+    font-size: 0;
+    font-weight: bold;
+    padding: 6px 8px;
+    text-align: right;
+}
+
+
+/* .dialog-wrap div.dialog-footer button {
+    background-color: #eff3f6;
+    background-image: -webkit-linear-gradient(270deg, #fafbfc 0%, #eff3f6 90%);
+    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+    border: 1px solid rgba(158, 158, 158, 0.9);
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 2px #fff;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 60px;
+    padding: 4px;
+    text-align: center;
+    width: auto;
+} */
+
+.dialog-wrap div.dialog-footer button {
+    margin-left: 8px;
+}
+
+.dialog-wrap div.dialog-footer button:first-child {
+    margin-left: 0px;
+}
+
+
+/* .dialog-wrap div.dialog-footer button:hover {
+    background-color: #dfeef7;
+    background-image: -webkit-linear-gradient(270deg, #fafbfc 0%, #dfeef7 90%);
+    background-image: linear-gradient(-180deg, #fafbfc 0%, #dfeef7 90%);
+    border: 1px solid rgba(150, 193, 221, 0.9);
+}
+
+.dialog-wrap div.dialog-footer button:active {
+    background: rgba(227, 227, 227, 0.9);
+    border: 1px solid rgba(158, 158, 158, 0.9);
+} */
