@@ -868,7 +868,8 @@
         }());
         ElasticBand.defaultConf = $.extend(ElasticBand.defaultConf, ElasticBandConf);
         ElasticBand.createWrap($(this));
-        this.data('ElasticBand', $.extend({
+        // this.data('ElasticBand', $.extend({
+        return $.extend(this, {
             deleteItem: function(index) {
                 ElasticBand.deleteItem(index);
             },
@@ -911,6 +912,6 @@
             zoomWidth: function() {
                 return ElasticBand.zoomWidth();
             }
-        }, null));
+        }, null);
     };
 })(jQuery);
